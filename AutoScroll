@@ -1,0 +1,89 @@
+import React from "react";
+import airbnb from "../assets/airbnb.svg";
+import facebook from "../assets/facebook.svg";
+import disney from "../assets/disney.svg";
+import apple from "../assets/apple.svg";
+import spark from "../assets/spark.svg";
+import samsung from "../assets/samsung.svg";
+import quora from "../assets/quora.svg";
+import sass from "../assets/sass.svg";
+
+const Day3 = () => {
+  return (
+    <div className="">
+      <h1 className="text-2xl text-white text-center mt-5 mb-20 font-bold">
+        Auto-Scroll Carousel
+      </h1>
+      <div className="w-full h-40 bg-white/10 overflow-hidden relative [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] ">
+        <div className="flex items-center space-x-10 animate-scrollLeft mt-14">
+          <img src={airbnb} alt="airbnb" />
+          <img src={apple} alt="apple" />
+          <img src={facebook} alt="facebook" />
+          <img src={samsung} alt="samsung" />
+          <img src={sass} alt="sass" />
+          <img src={spark} alt="spark" />
+          <img src={quora} alt="quora" />
+          <img src={disney} alt="disney" />
+          {/* Add duplicated items for smooth infinite scroll */}
+          <img src={airbnb} alt="airbnb" />
+          <img src={apple} alt="apple" />
+          <img src={facebook} alt="facebook" />
+          <img src={samsung} alt="samsung" />
+          <img src={sass} alt="sass" />
+          <img src={spark} alt="spark" />
+          <img src={quora} alt="quora" />
+          <img src={disney} alt="disney" />
+        </div>
+      </div>
+
+      <div className="h-40 bg-white/10 overflow-hidden relative mt-10 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+        <div className="flex items-center space-x-10 animate-scrollRight mt-14 ">
+          <img src={airbnb} alt="airbnb" />
+          <img src={apple} alt="apple" />
+          <img src={facebook} alt="facebook" />
+          <img src={samsung} alt="samsung" />
+          <img src={sass} alt="sass" />
+          <img src={spark} alt="spark" />
+          <img src={quora} alt="quora" />
+          <img src={disney} alt="disney" />
+          {/* Add duplicated items for smooth infinite scroll */}
+          <img src={airbnb} alt="airbnb" />
+          <img src={apple} alt="apple" />
+          <img src={facebook} alt="facebook" />
+          <img src={samsung} alt="samsung" />
+          <img src={sass} alt="sass" />
+          <img src={spark} alt="spark" />
+          <img src={quora} alt="quora" />
+          <img src={disney} alt="disney" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Day3;
+
+
+
+Add in tailwind config file --> extend []
+
+keyframes: {
+        scrollLeft: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        scrollRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        bounce: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+      },
+      animation: {
+        scrollLeft: 'scrollLeft 20s linear infinite',
+        scrollRight: 'scrollRight 20s linear infinite',
+        bounce: 'bounce 2s infinite',
+      },
+  
