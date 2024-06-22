@@ -1,0 +1,69 @@
+import React from "react";
+import profile from '../assets/background.jpg'
+const Day = () => {
+  return (
+    <div className="text-white font-sora text-center mb-49 ">
+      <div>
+        <h2 className="text-center text-4xl font-extrabold w-96 leading-normal mx-auto mb-6">
+          Card Design
+        </h2>
+      </div>
+
+      <div className="flex max-w-5xl mx-auto gap-8 group">
+        <div className="bg-white/10 p-8 rounded-xl mix-blend-luminosity group-hover:blur-sm cursor-pointer hover:!blur-none group-hover:scale-[0.75] hover:!scale-100">
+          <img
+            src={profile}
+            alt=""
+            className="h-40 w-40 mx-auto rounded-full"
+          />
+          <h4 className=" mt-2 uppercase text-xl font-bold">John Max</h4>
+          <p className=" text-sm leading-7 my-3 font-light opacity-50 text-justify">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+            corrupti recusandae dolore vero eaque a. Quasi dolore reiciendis
+            illo esse beatae!
+          </p>
+          <button className=" bg-white/25 px-4 py-4 rounded-full hover:text-purple-800">
+            Get in touch
+          </button>
+        </div>
+
+        <div className="bg-white/10 p-8 rounded-xl mix-blend-luminosity group-hover:blur-sm cursor-pointer hover:!blur-none group-hover:scale-[0.75] hover:!scale-100">
+          <img
+            src={profile}
+            alt=""
+            className="h-40 w-40 mx-auto rounded-full"
+          />
+          <h4 className="mt-2 uppercase text-xl font-bold">John Max</h4>
+          <p className=" text-sm leading-7 my-3 font-light opacity-50 text-justify">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+            corrupti recusandae dolore vero eaque a. Quasi dolore reiciendis
+            illo esse beatae!
+          </p>
+          <button className=" bg-white/25 px-4 py-4 rounded-full hover:text-purple-800">
+            Get in touch
+          </button>
+        </div>
+
+        <div className="bg-white/10 p-8 rounded-xl mix-blend-luminosity group-hover:blur-sm cursor-pointer hover:!blur-none group-hover:scale-[0.75] hover:!scale-100">
+          <img
+            src={profile}
+            alt=""
+            className="h-40 w-40 mx-auto rounded-full"
+          />
+          <h4 className=" uppercase text-xl font-bold mt-2">John Max</h4>
+          <p className=" text-sm leading-7 my-3 font-light opacity-50 text-justify">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+            corrupti recusandae dolore vero eaque a. Quasi dolore reiciendis
+            illo esse beatae
+          </p>
+          <button className=" bg-white/25 px-4 py-4 rounded-full hover:text-purple-800">
+            Get in touch
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+export default Day;
